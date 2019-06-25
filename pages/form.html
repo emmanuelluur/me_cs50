@@ -9,14 +9,14 @@
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <div class="container space">
     <!-- main -->
     <main class="row">
         <!--Photo & contact content-->
         <section class="col-sm-2">
-            <img src="./img/profile_pic.jpg" class="img-fluid rounded" alt="Cinque Terre">
+            <img src="../img/profile_pic.jpg" class="img-fluid rounded" alt="Cinque Terre">
             <p>
                 <p class="profileName"><strong>Emmanuel Lucio Urbina</strong></p>
                 <ul class="lists-info">
@@ -26,21 +26,26 @@
             </p>
 
             <ul class="lists-btns">
-                <li><a href="#" class="btn btn-outline-secondary btn-sm btn-block">About Me</a></li>
+                <li><a href="../index.html" class="btn btn-outline-secondary btn-sm btn-block">About Me</a></li>
                 <li><a href="#" class="btn btn-outline-secondary btn-sm btn-block">Interests</a></li>
-                <li><a href="./pages/form.html" class="btn btn-outline-secondary btn-sm btn-block">Contact</a></li>
+                <li><a href="#" class="btn btn-outline-secondary btn-sm btn-block">Contact</a></li>
             </ul>
 
         </section>
-        <section class="col-sm-10">
-            <h3>About Me</h3>
-            <p>
-                Hi, I'm Emmanuel. Am glad to introduce me, I'am from México.
-                First I work by my self like web developer with PHP & Js
-                (using NodeJS & express framework).
-                I enrolled in CS50WEB becouse I'am interesting learn Python for web and improve my knowledge about web
-                development.
-            </p>
+        <section class="col-sm-4">
+            <form action="./response.html" method="post">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="mail" id="email" class="form-control" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" class="form-control" cols="30" rows="10" required>
+                        
+                    </textarea>
+                </div>
+                <button class="btn btn-success" name="btnSend" id="btnSend" type="submit">Send</button>
+            </form>
         </section>
     </main>
 </div>

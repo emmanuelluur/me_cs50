@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Message</title>
+</head>
+
+<body>
+    <div id="myApp">
+        <p>
+            Your message was sent successfully
+        </p>
+        <p>
+            <button id="back">Go back</button>
+        </p>
+    </div>
+
+    <script>
+        let parent = document.getElementById("myApp");
+        // catch all actions
+        parent.addEventListener("click", elemen =>{
+            if (elemen.target.getAttribute("id")==="back") {
+                history.back();
+            }
+        });
+    </script>
+</body>
+
+</html>
