@@ -1,0 +1,27 @@
+.profileName {
+  color: #6f42c1;
+  text-align: center;
+}
+
+.space {
+  padding-top: 50px;
+}
+
+.lists-info {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.lists-btns {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.lists-btns a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+.lists-btns a:hover {
+  color: #fff !important;
+}
