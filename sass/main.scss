@@ -1,0 +1,21 @@
+$space-top: 50px;
+$violet: #6f42c1;
+$list-decoration: none;
+
+
+.profileName{color: $violet; text-align: center;}
+.space{padding-top: $space-top}
+.lists-info{
+    list-style-type: $list-decoration;  
+    padding:0px;
+}
+.lists-btns{
+
+    list-style-type: $list-decoration;  
+    padding:0px;
+    a { 
+        color: #000!important;
+        &:hover{color: #fff!important}
+        text-decoration: none!important;    
+    }
+}
