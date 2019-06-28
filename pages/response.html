@@ -5,24 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Message</title>
 </head>
 
 <body>
-    <div id="myApp">
-        <p>
-            Your message was sent successfully
-        </p>
-        <p>
-            <button id="back">Go back</button>
-        </p>
-    </div>
+    <main class="container">
+        <section id="myApp">
+            <section class="row">
+                <article class="col-sm-12">
+                    <div class="jumbotron text-center">
+                        <h3>Your message was sent successfully</h3>
+                        <p>
+                            <button id="back" class="btn btn-success btn-lg">Go back</button>
+                        </p>
+                    </div>
+
+                </article>
+            </section>
+        </section>
+
+    </main>
+
 
     <script>
         let parent = document.getElementById("myApp");
         // catch all actions
-        parent.addEventListener("click", elemen =>{
-            if (elemen.target.getAttribute("id")==="back") {
+        parent.addEventListener("click", elemen => {
+            if (elemen.target.getAttribute("id") === "back") {
                 history.back();
             }
         });
